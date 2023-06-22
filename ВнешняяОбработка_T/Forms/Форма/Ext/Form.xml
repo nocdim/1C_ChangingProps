@@ -34,10 +34,10 @@
 		<CommandBar name="Группа2" id="14">
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="15"/>
 			<ChildItems>
-				<Button name="Выполнить" id="12">
+				<Button name="ЗапуститьОбработку" id="18">
 					<Type>CommandBarButton</Type>
-					<CommandName>Form.Command.Выполнить_Т</CommandName>
-					<ExtendedTooltip name="ВыполнитьРасширеннаяПодсказка" id="13"/>
+					<CommandName>Form.Command.ЗапуститьОбработку</CommandName>
+					<ExtendedTooltip name="ЗапуститьОбработкуРасширеннаяПодсказка" id="19"/>
 				</Button>
 				<Button name="ЗаполнитьТест" id="16">
 					<Type>CommandBarButton</Type>
@@ -50,27 +50,12 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.ВнешняяОбработка_T</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ВнешняяОбработка_Т_Фон</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Выполнить_Т" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>Выполнить_Т</Action>
-		</Command>
 		<Command name="ЗаполнитьТест" id="2">
 			<Title>
 				<v8:item>
@@ -85,6 +70,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьТест</Action>
+		</Command>
+		<Command name="ЗапуститьОбработку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьОбработку</Action>
 		</Command>
 	</Commands>
 </Form>
